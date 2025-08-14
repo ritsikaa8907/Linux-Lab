@@ -1,0 +1,45 @@
+# Mac Setup Guide: VS Code, VirtualBox & Ubuntu
+
+## 1️⃣ Install VS Code
+1. Open your browser and go to:  
+   [https://code.visualstudio.com/](https://code.visualstudio.com/)  
+2. Download for **Mac (Apple Silicon)** version.  
+3. Extract the `.zip` → Move **Visual Studio Code.app** to `Applications`.  
+4. Open from **Launchpad** or `Applications`.  
+5. If blocked, allow in:  
+   **System Settings → Privacy & Security → Allow App**.
+
+---
+
+## 2️⃣ Install VirtualBox (ARM64)
+1. Go to:  
+   [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)  
+2. Download **OS X hosts (ARM64)** version.  
+3. Open `.dmg` → Drag **VirtualBox.app** to `Applications`.  
+4. If blocked, allow in:  
+   **System Settings → Privacy & Security → Allow App**.
+
+---
+
+## 3️⃣ Download Ubuntu (ARM64)
+1. Go to:  
+   [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)  
+2. Scroll to **Other versions → ARM**.  
+3. Download **Ubuntu 22.04 LTS ARM64**.  
+4. File will be a `.iso`.
+
+---
+
+## 4️⃣ Create Ubuntu VM in VirtualBox
+1. Open **VirtualBox** → Click **New**.  
+   - **Name**: Ubuntu  
+   - **Type**: Linux  
+   - **Version**: Ubuntu (64-bit)  
+2. Allocate resources:  
+   - **Memory**: 4096 MB (4 GB)  
+   - **CPUs**: 2  
+   - **Storage**: 25 GB+  
+3. Attach ISO:  
+   - Go to **Settings → Storage → Empty disk → Choose Ubuntu `.iso`**.  
+4. Start VM and follow Ubuntu installation instructions.
+Screenshot 2025-08-12 at 12.39.22 PM.png
