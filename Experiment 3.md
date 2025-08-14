@@ -1,9 +1,9 @@
  # Basic Linux Commands
 
- '''bash
+ ```bash
  >>pwd
 
- '''
+ ```
 
 ##ls -ls
 Output example
