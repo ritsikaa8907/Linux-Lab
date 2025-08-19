@@ -8,7 +8,7 @@
 
 ```bash
 # Create an empty file
-touch file1.txt
+touch file1.txtfgfgfhfhg
 
 # Update timestamp of an existing file
 touch existing.txt
