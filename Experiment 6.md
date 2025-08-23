@@ -39,8 +39,8 @@ Variables store data (text, numbers, paths, etc.).
 ### Defining variables
 
 ```bash
-name="Vibhu"
-age=37
+name="Ritsika"
+age=17
 ```
 
 ⚠️ No spaces around `=`.
@@ -54,7 +54,7 @@ echo "My name is $name and I am $age years old."
 Output:
 
 ```
-My name is Vibhu and I am 37 years old.
+My name is Ritsika and I am 17 years old.
 ```
 
 ### Environment variables
@@ -159,14 +159,14 @@ greet() {
     echo "Hello, $1"
 }
 
-greet Vibhu
+greet Ritsika
 greet World
 ```
 
 Output:
 
 ```
-Hello, Vibhu
+Hello, Ritsika
 Hello, World
 ```
 
