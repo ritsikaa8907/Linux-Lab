@@ -1,8 +1,3 @@
-![alt text](<Screenshot 2025-08-23 at 11.48.38 AM.png>)
-![alt text](<Screenshot 2025-08-23 at 12.22.18 PM.png>)
-
-
-
 #  INTRODUCTION TO SHELL SCRIPTING 🐚
 
 Shell scripting helps automate repetitive tasks on Unix/Linux systems using a sequence of shell commands written inside a file.
@@ -192,3 +187,8 @@ echo "Backup created at: $backup"
 ```bash
 ./backup.sh
 ```
+
+
+
+![alt text](<Screenshot 2025-08-23 at 11.48.38 AM.png>)
+![alt text](<Screenshot 2025-08-23 at 12.22.18 PM.png>)
