@@ -280,12 +280,10 @@ chmod +x welcome.sh
 Welcome to shell scripting!
 ```
 
-
-```
 📘 Section 2: Using Variables
 Variables hold data like text or numbers.
 Declaring variables:
-bash
+```bash
 username="Ritsika"
 user_age=17
 ⚠️ No spaces before or after =.
