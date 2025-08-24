@@ -254,6 +254,7 @@ Run:
 ![alt text](<Screenshot 2025-08-23 at 12.22.18 PM.png>)
 
 
+
 # 💻 Introduction to Shell Scripting
 
 Shell scripting helps automate repetitive tasks on Unix/Linux systems using a sequence of shell commands written inside a file.
@@ -277,27 +278,37 @@ chmod +x welcome.sh
 ./welcome.sh
 🖥️ Output:
 Welcome to shell scripting!
+```
+
+
+```bash
 📘 Section 2: Using Variables
 Variables hold data like text or numbers.
 Declaring variables:
 
-username="Aanya"
-user_age=21
+username="Ritsika"
+user_age=17
 ⚠️ No spaces before or after =.
 Accessing values:
 echo "User: $username, Age: $user_age"
 ➡️ Output:
-User: Aanya, Age: 21
+User: Ritsika, Age: 17
 Built-in variables:
 echo $USER    # Username
 echo $HOME    # Home directory
 echo $PWD     # Current directory
+```
+
+```bash
 📘 Section 3: Handling User Input
 Use read to take input from the user.
 #!/bin/bash
 echo "What's your favorite tool?"
 read tool
 echo "You entered: $tool"
+```
+
+```bash
 📘 Section 4: Conditional Statements
 Use if statements for decision making.
 #!/bin/bash
@@ -315,6 +326,9 @@ fi
 -lt: less than
 -ge: greater or equal
 -le: less or equal
+```
+
+```bash
 📘 Section 5: Loops
 🔁 For Loop
 for n in 1 2 3
@@ -340,184 +354,23 @@ do
     echo "Until loop: $j"
     ((j++))
 done
-📘 Section 6: Functions
-Functions are reusable code blocks.
-say_hello() {
-    echo "Hi there, $1!"
-}
-
-say_hello "Ankit"
-say_hello "Everyone"
-🖥️ Output:
-Hi there, Ankit!
-Hi there, Everyone!
-📘 Section 7: Command-Line Arguments
-Scripts can access input passed via the command line.
-#!/bin/bash
-echo "Script: $0"
-echo "First argument: $1"
-echo "Second argument: $2"
-echo "All arguments: $@"
-echo "Total arguments: $#"
-🧪 Run it like:
-./myscript.sh apple banana
-🖥️ Output:
-Script: ./myscript.sh
-First argument: apple
-Second argument: banana
-All arguments: apple banana
-Total arguments: 2
-📘 Section 8: Arrays
-Arrays store multiple values.
-colors=("red" "green" "blue")
-
-echo "First color: ${colors[0]}"
-
-for color in "${colors[@]}"; do
-    echo "Color: $color"
-done
-📘 Section 9: Common Shell Commands
-Here are a few frequently used commands in shell scripts:
-Command	Description
-date	Display current date & time
-whoami	Show current user
-ls	List files in a directory
-pwd	Show current directory path
-cat	Read and display file text
-📘 Section 10: Real Example — Backup Script
-This script creates a compressed backup of your home directory.
-#!/bin/bash
-
-backup="/tmp/backup_$(date +%Y%m%d_%H%M%S).tar.gz"
-
-tar -czf $backup $HOME
-
-echo "Backup created at: $backup"
-🟢 Run it:
-./backup.sh
-📷 Screenshots
-
-🎯 Recap
-In this tutorial, you learned how to:
-Write and run shell scripts
-Use variables and input
-Add conditionals and loops
-Work with functions and arguments
-Use arrays
-Create a backup script
-Happy scripting! 🚀
-
----
-
-### ✅ How to Use
-
-1. Open **VS Code**
-2. Create a new file, name it `shell_tutorial.md`
-3. Paste the entire content above into it
-4. Use **Markdown Preview** (`Ctrl+Shift+V`) to view the tutorial nicely formatted
-
-Let me know if you want a downloadable PDF or to generate real screenshots for it!
-You said:
-no like give a whole md file so I can copy paste the ENTIRE thing INCLUDING headings
-ChatGPT said:
-Got it! Here's the complete .md (Markdown) content, ready for copy-paste directly into VS Code (or any text editor) as a .md file (e.g., shell_scripting_tutorial.md). It includes everything — headings, code, formatting, and all the content in a rewritten style.
-# 💻 Introduction to Shell Scripting
-
-Shell scripting helps automate repetitive tasks on Unix/Linux systems using a sequence of shell commands written inside a file.
-
----
-
-## 📘 Section 1: Understanding Shell Scripts
-
-A **shell** is a command-line interface (e.g., `bash`, `sh`, or `zsh`) that interprets and executes user commands.  
-A **shell script** is a file containing shell commands executed in order.
-
-- Script files usually end with `.sh`.
-
-📝 **Example — `welcome.sh`:**
+```
 
 ```bash
-#!/bin/bash
-echo "Welcome to shell scripting!"
-✅ To run the script:
-chmod +x welcome.sh
-./welcome.sh
-🖥️ Output:
-Welcome to shell scripting!
-📘 Section 2: Using Variables
-Variables hold data like text or numbers.
-Declaring variables:
-
-username="Aanya"
-user_age=21
-⚠️ No spaces before or after =.
-Accessing values:
-echo "User: $username, Age: $user_age"
-➡️ Output:
-User: Aanya, Age: 21
-Built-in variables:
-echo $USER    # Username
-echo $HOME    # Home directory
-echo $PWD     # Current directory
-📘 Section 3: Handling User Input
-Use read to take input from the user.
-#!/bin/bash
-echo "What's your favorite tool?"
-read tool
-echo "You entered: $tool"
-📘 Section 4: Conditional Statements
-Use if statements for decision making.
-#!/bin/bash
-value=8
-
-if [ $value -gt 5 ]; then
-    echo "Above threshold"
-else
-    echo "Below or equal to threshold"
-fi
-📌 Comparison operators:
--eq: equal
--ne: not equal
--gt: greater than
--lt: less than
--ge: greater or equal
--le: less or equal
-📘 Section 5: Loops
-🔁 For Loop
-for n in 1 2 3
-do
-    echo "Number: $n"
-done
-Or using a range:
-for n in {1..3}
-do
-    echo "Loop iteration: $n"
-done
-🔁 While Loop
-i=1
-while [ $i -le 3 ]
-do
-    echo "While loop: $i"
-    ((i++))
-done
-🔁 Until Loop
-j=1
-until [ $j -gt 3 ]
-do
-    echo "Until loop: $j"
-    ((j++))
-done
 📘 Section 6: Functions
 Functions are reusable code blocks.
 say_hello() {
     echo "Hi there, $1!"
 }
 
-say_hello "Ankit"
+say_hello "Ritsika"
 say_hello "Everyone"
 🖥️ Output:
-Hi there, Ankit!
+Hi there, Ritsika!
 Hi there, Everyone!
+```
+
+```bash
 📘 Section 7: Command-Line Arguments
 Scripts can access input passed via the command line.
 #!/bin/bash
@@ -534,6 +387,9 @@ First argument: apple
 Second argument: banana
 All arguments: apple banana
 Total arguments: 2
+```
+
+```bash
 📘 Section 8: Arrays
 Arrays store multiple values.
 colors=("red" "green" "blue")
@@ -543,6 +399,9 @@ echo "First color: ${colors[0]}"
 for color in "${colors[@]}"; do
     echo "Color: $color"
 done
+```
+
+```bash
 📘 Section 9: Common Shell Commands
 Here are a few frequently used commands in shell scripts:
 Command	Description
@@ -551,6 +410,9 @@ whoami	Show current user
 ls	List files in a directory
 pwd	Show current directory path
 cat	Read and display file text
+```
+
+```bash
 📘 Section 10: Real Example — Backup Script
 This script creates a compressed backup of your home directory.
 #!/bin/bash
@@ -562,4 +424,4 @@ tar -czf $backup $HOME
 echo "Backup created at: $backup"
 🟢 Run it:
 ./backup.sh
-
+```
