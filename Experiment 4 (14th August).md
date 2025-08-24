@@ -1,10 +1,10 @@
-# 🧠 Advanced Linux File Commands – Reformatted Guide
+#  Advanced Linux File Commands
 
 Mastering advanced file operations in Linux helps you manage your system efficiently. Here's a categorized guide to essential commands.
 
 ---
 
-## 📁 FILE MANIPULATION
+## 📍 FILE MANIPULATION
 
 ### ➤ `touch` – Create/Update File Timestamps
 
@@ -147,7 +147,7 @@ sudo chgrp devs team_script.sh
 
 ---
 
-## 🔍 ADVANCED SEARCH & ARCHIVE
+## 📍 ADVANCED SEARCH & ARCHIVE
 
 ### ➤ `find` – Locate Files
 
