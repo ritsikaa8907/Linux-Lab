@@ -80,7 +80,7 @@ fi
 
 ## 📍 **SECTION 5: Loops** 🔁
 
- *For* Loop
+🔁 *For* Loop
 ```bash
 for n in 1 2 3
 do
