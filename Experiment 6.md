@@ -9,7 +9,7 @@ Shell scripting helps automate repetitive tasks on Unix/Linux systems using a se
 
 ---
 
-## 📍 SECTION 1: Understanding Shell Scripts:
+## 📍 __SECTION 1: Understanding Shell Scripts:__
 
 A **shell** is a command-line interface (e.g., `bash`, `sh`, or `zsh`) that interprets and executes user commands.  
 A **shell script** is a file containing shell commands executed in order.
@@ -28,7 +28,8 @@ chmod +x welcome.sh
 Welcome to shell scripting!
 ```
 
-📍 SECTION 2: Using Variables
+📍 **SECTION 2: Using Variables**
+
 Variables hold data like text or numbers.
 Declaring variables:
 ```bash
@@ -45,7 +46,7 @@ echo $HOME    # Home directory
 echo $PWD     # Current directory
 ```
 
-📍 SECTION 3: Handling User Input
+📍 **SECTION 3: Handling User Input**
 Use read to take input from the user.
 ```bash
 #!/bin/bash
@@ -54,8 +55,8 @@ read tool
 echo "You entered: $tool"
 ```
 
-📍 SECTION 4: Conditional Statements
-Use if statements for decision making.
+📍 **SECTION 4: Conditional Statements**
+Use *if* statements for decision making.
 
 ```bash
 #!/bin/bash
@@ -77,8 +78,8 @@ fi
 -le: less or equal
 
 
-📍 SECTION 5: Loops
-🔁 For Loop
+📍 **SECTION 5: Loops**
+🔁 *For* Loop
 ```bash
 for n in 1 2 3
 do
@@ -91,7 +92,7 @@ do
 done
 ```
 
-🔁 While Loop
+🔁 *While* Loop
 ```bash
 i=1
 while [ $i -le 3 ]
@@ -101,7 +102,7 @@ do
 done
 ```
 
-🔁 Until Loop
+🔁 *Until* Loop
 ```bash
 j=1
 until [ $j -gt 3 ]
@@ -111,7 +112,7 @@ do
 done
 ```
 
-📍 SECTION 6: Functions
+📍 **SECTION 6: Functions**
 Functions are reusable code blocks.
 
 ```bash
@@ -129,7 +130,7 @@ Hi there, Everyone!
 ```
 
 
-📍 SECTION 7: Command-Line Arguments
+📍 **SECTION 7: Command-Line Arguments**
 Scripts can access input passed via the command line.
 ```bash
 #!/bin/bash
@@ -154,7 +155,7 @@ All arguments: apple banana
 Total arguments: 2
 ```
 
-📍 SECTION 8: Arrays
+📍 **SECTION 8: Arrays**
 Arrays store multiple values.
 ```bash
 colors=("red" "green" "blue")
@@ -166,7 +167,7 @@ for color in "${colors[@]}"; do
 done
 ```
 
-📍 SECTION 9: Common Shell Commands
+📍 **SECTION 9: Common Shell Commands**
 Here are a few frequently used commands in shell scripts:
 Command	Description
 date	Display current date & time
@@ -175,7 +176,7 @@ ls	List files in a directory
 pwd	Show current directory path
 cat	Read and display file text
 
-📍 SECTION 10: Real Example — Backup Script
+📍 **SECTION 10: Real Example — Backup Script**
 This script creates a compressed backup of your home directory.
 ```bash
 #!/bin/bash
