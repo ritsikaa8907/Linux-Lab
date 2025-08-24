@@ -164,13 +164,17 @@ done
 ```
 
 ## 📍 **SECTION 9: Common Shell Commands**
+
 Here are a few frequently used commands in shell scripts:
+
 Command	Description
-date	Display current date & time
-whoami	Show current user
-ls	List files in a directory
-pwd	Show current directory path
-cat	Read and display file text
+```bash
+date:	Display current date & time
+whoami:	Show current user
+ls:	List files in a directory
+pwd:	Show current directory path
+cat:	Read and display file text
+```
 
 ## 📍 **SECTION 10: Real Example — Backup Script**
 This script creates a compressed backup of your home directory.
