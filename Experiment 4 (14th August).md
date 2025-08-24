@@ -81,7 +81,7 @@ tail -f log.txt                          # Live update
 
 ---
 
-## 🔐 FILE PERMISSIONS & OWNERSHIP
+## 📍 FILE PERMISSIONS & OWNERSHIP
 
 ### ➤ `ls -l` – Long Listing
 
@@ -221,9 +221,3 @@ ln -s /real/path shortcut             # Symbolic link
 | `ln`      | Create links                    |
 
 ---
-
-📚 **Pro Tip**: Combine commands using pipes (`|`) and logical operators (`&&`, `||`) to build powerful shell scripts.
-
----
-
-🧩 End of Guide — Practice using these commands in your terminal to reinforce learning!
