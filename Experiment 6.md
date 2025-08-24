@@ -281,11 +281,11 @@ Welcome to shell scripting!
 ```
 
 
-```bash
+```
 📘 Section 2: Using Variables
 Variables hold data like text or numbers.
 Declaring variables:
-
+bash
 username="Ritsika"
 user_age=17
 ⚠️ No spaces before or after =.
@@ -299,18 +299,19 @@ echo $HOME    # Home directory
 echo $PWD     # Current directory
 ```
 
-```bash
 📘 Section 3: Handling User Input
 Use read to take input from the user.
+```bash
 #!/bin/bash
 echo "What's your favorite tool?"
 read tool
 echo "You entered: $tool"
 ```
 
-```bash
 📘 Section 4: Conditional Statements
 Use if statements for decision making.
+
+```bash
 #!/bin/bash
 value=8
 
@@ -319,6 +320,8 @@ if [ $value -gt 5 ]; then
 else
     echo "Below or equal to threshold"
 fi
+```
+
 📌 Comparison operators:
 -eq: equal
 -ne: not equal
@@ -326,11 +329,11 @@ fi
 -lt: less than
 -ge: greater or equal
 -le: less or equal
-```
 
-```bash
+
 📘 Section 5: Loops
 🔁 For Loop
+```bash
 for n in 1 2 3
 do
     echo "Number: $n"
@@ -340,14 +343,20 @@ for n in {1..3}
 do
     echo "Loop iteration: $n"
 done
+```
+
 🔁 While Loop
+```bash
 i=1
 while [ $i -le 3 ]
 do
     echo "While loop: $i"
     ((i++))
 done
+```
+
 🔁 Until Loop
+```bash
 j=1
 until [ $j -gt 3 ]
 do
@@ -356,32 +365,42 @@ do
 done
 ```
 
-```bash
 📘 Section 6: Functions
 Functions are reusable code blocks.
+
+```bash
 say_hello() {
     echo "Hi there, $1!"
 }
 
 say_hello "Ritsika"
 say_hello "Everyone"
+```
+```bash
 🖥️ Output:
 Hi there, Ritsika!
 Hi there, Everyone!
 ```
 
-```bash
+
 📘 Section 7: Command-Line Arguments
 Scripts can access input passed via the command line.
+```bash
 #!/bin/bash
 echo "Script: $0"
 echo "First argument: $1"
 echo "Second argument: $2"
 echo "All arguments: $@"
 echo "Total arguments: $#"
+```
+
 🧪 Run it like:
+```bash
 ./myscript.sh apple banana
+```
+
 🖥️ Output:
+```bash
 Script: ./myscript.sh
 First argument: apple
 Second argument: banana
@@ -389,9 +408,9 @@ All arguments: apple banana
 Total arguments: 2
 ```
 
-```bash
 📘 Section 8: Arrays
 Arrays store multiple values.
+```bash
 colors=("red" "green" "blue")
 
 echo "First color: ${colors[0]}"
@@ -401,7 +420,6 @@ for color in "${colors[@]}"; do
 done
 ```
 
-```bash
 📘 Section 9: Common Shell Commands
 Here are a few frequently used commands in shell scripts:
 Command	Description
@@ -410,11 +428,10 @@ whoami	Show current user
 ls	List files in a directory
 pwd	Show current directory path
 cat	Read and display file text
-```
 
-```bash
 📘 Section 10: Real Example — Backup Script
 This script creates a compressed backup of your home directory.
+```bash
 #!/bin/bash
 
 backup="/tmp/backup_$(date +%Y%m%d_%H%M%S).tar.gz"
@@ -422,6 +439,8 @@ backup="/tmp/backup_$(date +%Y%m%d_%H%M%S).tar.gz"
 tar -czf $backup $HOME
 
 echo "Backup created at: $backup"
+```
 🟢 Run it:
+```bash
 ./backup.sh
 ```
