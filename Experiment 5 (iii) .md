@@ -1,72 +1,55 @@
-Practice Experiment
----
-
-### 🔹 1. Create a new user
-
-```bash
-sudo useradd -m newuser
-```
-
-* `-m` → creates a home directory `/home/newuser`.
+# Practice Task: Users, Groups & File Ownership in Linux
 
 ---
 
-### 🔹 2. Create a new group
-
+## Step 1️⃣ — Add a New User
 ```bash
-sudo groupadd newgroup
-```
+sudo adduser demoUser
+``` 
+📎This will also create a home directory: /home/demoUser.
 
----
-
-### 🔹 3. Add the user to the group
-
+## Step 2️⃣ — Create a Group
 ```bash
-sudo usermod -aG newgroup newuser
+sudo groupadd demoGroup
 ```
 
-* `-aG` → append user to the supplementary group (doesn’t remove existing groups).
-
----
-
-### 🔹 4. Create a file (as current user, e.g. root or your login user)
-
+## Step 3️⃣ — Put the User into the Group
 ```bash
-touch testfile.txt
+sudo usermod -aG demoGroup demoUser
+ℹ️ -aG means append the group membership instead of replacing existing ones.
 ```
 
-Check ownership:
-
+## Step 4️⃣ — Make a File
 ```bash
-ls -l testfile.txt
+echo "hello" > sample.txt
 ```
 
-Example:
-
-```
--rw-r--r-- 1 ubuntu ubuntu 0 Aug 19 14:02 testfile.txt
-```
-
----
-
-### 🔹 5. Assign ownership of the file to `newuser` and `newgroup`
-
+Now check its details:
 ```bash
-sudo chown newuser:newgroup testfile.txt
+ls -lh sample.txt
 ```
 
----
-
-### 🔹 6. Verify ownership
-
+Example result:
 ```bash
-ls -l testfile.txt
+-rw-r--r-- 1 ubuntu ubuntu 6 Aug 25 10:30 sample.txt
+```
+## Step 5️⃣ — Transfer File Ownership
+```bash
+sudo chown demoUser:demoGroup sample.txt
 ```
 
-Output:
-
+## Step 6️⃣ — Confirm Changes
+```bash
+ls -lh sample.txt
 ```
--rw-r--r-- 1 newuser newgroup 0 Aug 19 14:02 testfile.txt
+
+Expected output:
+```bash 
+-rw-r--r-- 1 demoUser demoGroup 6 Aug 25 10:30 sample.txt
 ```
 
----
+✅ Summary:
+· Created a user (demoUser) and a group (demoGroup)
+· Added the user into the group
+· Made a test file and reassigned its ownership
+· Verified the changes successfully
