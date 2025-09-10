@@ -46,9 +46,7 @@ Chosen method Option A: Virtual Machine
 3. Attach ISO:  
    - Go to **Settings → Storage → Empty disk → Choose Ubuntu `.iso`**.  
 4. Start VM and follow Ubuntu installation instructions.
-![alt text](<Screenshot 2025-08-12 at 12.39.22 PM.png>)
-
-
+![alt text](image.png)
 ---
 
 ## 3. Terminal Outputs
@@ -72,7 +70,6 @@ It typically outputs:
 
 ### Sample Output:
 
-![alt text](images/image-36.png)
 
 ## 2️⃣ $ uname -a
 The command uname -a prints detailed system information about the Linux kernel and machine.
@@ -101,7 +98,8 @@ It typically outputs:
 
 ## Sample Output:
 
-![alt text](images/image-37.png)
+![alt text](image-2.png)
+
 
 ## 3️⃣  df -h
 The command df -h displays the disk space usage of all mounted file systems.
@@ -125,7 +123,8 @@ It typically shows:
 - Mount point (where the filesystem is attached, e.g., / or /home)
 
 ### Sample Output:
-!![alt text](images/image-38.png)
+![alt text](image-3.png)
+
 
 ## 4️⃣ free -m
 The command free -m displays the system’s memory (RAM and swap) usage in megabytes.
