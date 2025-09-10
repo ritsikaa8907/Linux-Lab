@@ -71,3 +71,8 @@ drwxr-xr-x@  5 ritsikaraghuvanshi  staff      160 Aug 12 12:27 Linux-Lab
 -rw-r--r--@  1 ritsikaraghuvanshi  staff  1116824 Aug 12 12:39 Screenshot 2025-08-12 at 12.39.22 PM.png
 -rw-r--r--@  1 ritsikaraghuvanshi  staff       83 Aug 11 20:03 hello.c
 ```
+
+
+## 
+
+##
