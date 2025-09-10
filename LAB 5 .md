@@ -55,17 +55,17 @@ project/
 
 2. Why is automation useful in DevOps?
 -DevOps focuses on collaboration, speed, and reliability in software development and deployment. Automation is a core part because it:
--Saves Time
--Repetitive tasks like creating environments, deploying code, or running tests can be automated.
--Reduces manual work so teams can focus on actual development.
--Reduces Human Error
--Manual tasks are prone to mistakes (typos, missing steps).
--Scripts and automation tools ensure tasks are executed consistently every time.
--Speeds Up Delivery
--Automation allows continuous integration and continuous deployment (CI/CD).
--Software updates can reach users faster and more reliably.
--Ensures Consistency Across Environments
--Development, testing, and production environments can be automatically configured the same way.
--Avoids the “it works on my machine” problem.
--Scales Easily
--Tasks that are simple for one system can be automatically applied to hundreds or thousands of servers.
+- Saves Time
+- Repetitive tasks like creating environments, deploying code, or running tests can be automated.
+- Reduces manual work so teams can focus on actual development.
+- Reduces Human Error
+- Manual tasks are prone to mistakes (typos, missing steps).
+- Scripts and automation tools ensure tasks are executed consistently every time.
+- Speeds Up Delivery
+- Automation allows continuous integration and continuous deployment (CI/CD).
+- Software updates can reach users faster and more reliably.
+- Ensures Consistency Across Environments
+- Development, testing, and production environments can be automatically configured the same way.
+- Avoids the “it works on my machine” problem.
+- Scales Easily
+- Tasks that are simple for one system can be automatically applied to hundreds or thousands of servers.

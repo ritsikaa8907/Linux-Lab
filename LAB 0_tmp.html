@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAB 0.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="mac-setup-guide-vs-code-virtualbox--ubuntu">Mac Setup Guide: VS Code, VirtualBox &amp; Ubuntu</h1>
+<h2 id="%F0%9F%93%91-table-of-contents">📑 Table of Contents</h2>
+<ol>
+<li><a href="#1-installation-method">Installation Method</a></li>
+<li><a href="#2-installation-process">Installation Process</a>
+<ul>
+<li><a href="#1%EF%B8%8F%E2%83%A3-install-vs-code">VS Code</a></li>
+<li><a href="#2%EF%B8%8F%E2%83%A3-install-virtualbox-arm64">VirtualBox</a></li>
+<li><a href="#3%EF%B8%8F%E2%83%A3-download-ubuntu-arm64">Ubuntu</a></li>
+<li><a href="#4%EF%B8%8F%E2%83%A3-create-ubuntu-vm-in-virtualbox">VM Setup</a></li>
+</ul>
+</li>
+<li><a href="#3-terminal-outputs">Terminal Outputs</a></li>
+<li><a href="#4-reflection">Reflection</a></li>
+<li><a href="#5-extra-questions">Extra Questions</a></li>
+</ol>
+<h1 id="1-installation-method">1. Installation Method</h1>
+<p>Chosen method Option A: Virtual Machine</p>
+<h1 id="2-installation-process">2. Installation Process</h1>
+<h2 id="1%EF%B8%8F%E2%83%A3-install-vs-code">1️⃣ Install VS Code</h2>
+<ol>
+<li>Open your browser and go to:<br>
+<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+<li>Download for <strong>Mac (Apple Silicon)</strong> version.</li>
+<li>Extract the <code>.zip</code> → Move <strong>Visual Studio Code.app</strong> to <code>Applications</code>.</li>
+<li>Open from <strong>Launchpad</strong> or <code>Applications</code>.</li>
+<li>If blocked, allow in:<br>
+<strong>System Settings → Privacy &amp; Security → Allow App</strong>.
+<img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- VS Code.png" alt="alt text"></li>
+</ol>
+<h2 id="2%EF%B8%8F%E2%83%A3-install-virtualbox-arm64">2️⃣ Install VirtualBox (ARM64)</h2>
+<ol>
+<li>Go to:<br>
+<a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
+<li>Download <strong>OS X hosts (ARM64)</strong> version.</li>
+<li>Open <code>.dmg</code> → Drag <strong>VirtualBox.app</strong> to <code>Applications</code>.</li>
+<li>If blocked, allow in:<br>
+<strong>System Settings → Privacy &amp; Security → Allow App</strong>.
+<img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- Virtualbox install.png" alt="alt text"></li>
+</ol>
+<hr>
+<h2 id="3%EF%B8%8F%E2%83%A3-download-ubuntu-arm64">3️⃣ Download Ubuntu (ARM64)</h2>
+<ol>
+<li>Go to:<br>
+<a href="https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a></li>
+<li>Scroll to <strong>Other versions → ARM</strong>.</li>
+<li>Download <strong>Ubuntu 22.04 LTS ARM64</strong>.</li>
+<li>File will be a <code>.iso</code>.
+<img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- Ubuntu Download.png" alt="alt text"></li>
+</ol>
+<hr>
+<h2 id="4%EF%B8%8F%E2%83%A3-create-ubuntu-vm-in-virtualbox">4️⃣ Create Ubuntu VM in VirtualBox</h2>
+<ol>
+<li>Open <strong>VirtualBox</strong> → Click <strong>New</strong>.
+<ul>
+<li><strong>Name</strong>: Ubuntu</li>
+<li><strong>Type</strong>: Linux</li>
+<li><strong>Version</strong>: Ubuntu (64-bit)</li>
+</ul>
+</li>
+<li>Allocate resources:
+<ul>
+<li><strong>Memory</strong>: 4096 MB (4 GB)</li>
+<li><strong>CPUs</strong>: 2</li>
+<li><strong>Storage</strong>: 25 GB+</li>
+</ul>
+</li>
+<li>Attach ISO:
+<ul>
+<li>Go to <strong>Settings → Storage → Empty disk → Choose Ubuntu <code>.iso</code></strong>.</li>
+</ul>
+</li>
+<li>Start VM and follow Ubuntu installation instructions.</li>
+</ol>
+<hr>
+<h1 id="3-terminal-outputs">3. Terminal Outputs</h1>
+<h2 id="1%EF%B8%8F%E2%83%A3-lsbrelease--a">1️⃣  lsb_release -a</h2>
+<p>The command lsb_release -a displays information about the Linux distribution you are running.</p>
+<p>lsb_release = Linux Standard Base release.</p>
+<p>-a option = shows all available details.</p>
+<p>It typically outputs:</p>
+<ul>
+<li>
+<p>Distributor ID (e.g., Ubuntu, Debian)</p>
+</li>
+<li>
+<p>Description (full name of the OS + version)</p>
+</li>
+<li>
+<p>Release (version number, e.g., 22.04)</p>
+</li>
+<li>
+<p>Codename (e.g., jammy, focal)</p>
+</li>
+</ul>
+<h3 id="sample-output">Sample Output:</h3>
+<p><img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- lsb_release -a.png" alt="alt text"></p>
+<h2 id="2%EF%B8%8F%E2%83%A3-uname--a">2️⃣  uname -a</h2>
+<p>The command uname -a prints detailed system information about the Linux kernel and machine.</p>
+<p>uname = Unix Name</p>
+<p>-a option = shows all available details.</p>
+<p>It typically outputs:</p>
+<ul>
+<li>
+<p>Kernel name (e.g., Linux)</p>
+</li>
+<li>
+<p>Hostname of the machine</p>
+</li>
+<li>
+<p>Kernel release (version number)</p>
+</li>
+<li>
+<p>Kernel version (build details)</p>
+</li>
+<li>
+<p>Machine hardware name (e.g., x86_64)</p>
+</li>
+<li>
+<p>Processor type</p>
+</li>
+<li>
+<p>Hardware platform</p>
+</li>
+<li>
+<p>Operating system</p>
+</li>
+</ul>
+<h2 id="sample-output">Sample Output:</h2>
+<h2 id="alt-text"><img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- uname -a.png" alt="alt text"></h2>
+<h2 id="3%EF%B8%8F%E2%83%A3-df--h">3️⃣  df -h</h2>
+<p>The command df -h displays the disk space usage of all mounted file systems.</p>
+<p>df = disk free</p>
+<p>-h option = human-readable format (sizes shown in KB, MB, GB instead of raw blocks).</p>
+<p>It typically shows:</p>
+<ul>
+<li>
+<p>Filesystem name (e.g., /dev/sda1)</p>
+</li>
+<li>
+<p>Size of the partition</p>
+</li>
+<li>
+<p>Used space</p>
+</li>
+<li>
+<p>Available space</p>
+</li>
+<li>
+<p>Percentage of usage</p>
+</li>
+<li>
+<p>Mount point (where the filesystem is attached, e.g., / or /home)</p>
+</li>
+</ul>
+<h3 id="sample-output">Sample Output:</h3>
+<h2 id="alt-text"><img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- df -h.png" alt="alt text"></h2>
+<h2 id="4%EF%B8%8F%E2%83%A3-free--m">4️⃣ free -m</h2>
+<p>The command free -m displays the system’s memory (RAM and swap) usage in megabytes.</p>
+<p>free = shows memory usage summary.</p>
+<p>-m option = presents values in MB (megabytes).</p>
+<p>It typically shows:</p>
+<ul>
+<li>
+<p><em>total</em>: total installed RAM</p>
+</li>
+<li>
+<p><em>used</em>: RAM currently in use</p>
+</li>
+<li>
+<p><em>free</em>: unused RAM</p>
+</li>
+<li>
+<p><em>shared</em>: memory used by tmpfs/shmem</p>
+</li>
+<li>
+<p><em>buff/cache</em>: memory used for disk caching</p>
+</li>
+<li>
+<p><em>available</em>: RAM available for starting new applications</p>
+</li>
+<li>
+<p><em>swap</em>: usage of swap space (virtual memory)</p>
+</li>
+</ul>
+<h3 id="sample-output">Sample Output:</h3>
+<p><img src="file:///Users/ritsikaraghuvanshi/Desktop/projects/Linux-Lab/Screenshot- free -m-2.png" alt="alt text"></p>
+<h2 id="4-reflection">4. Reflection</h2>
+<p>During installation, the main challenges I faced were:</p>
+<ul>
+<li>
+<p>Setting up VirtualBox guest additions.</p>
+</li>
+<li>
+<p>Configuring correct RAM and disk size.</p>
+</li>
+<li>
+<p>Enabling virtualization in BIOS.</p>
+</li>
+</ul>
+<hr>
+<h2 id="5-extra-questions">5. Extra Questions</h2>
+<p><em>Q1.</em> What are two advantages of installing Ubuntu in VirtualBox?</p>
+<ul>
+<li>
+<p>Can run Ubuntu without affecting existing OS.</p>
+</li>
+<li>
+<p>Easy to take snapshots and revert to earlier states.</p>
+</li>
+</ul>
+<p><em>Q2.</em> What are two advantages of dual booting instead of using a VM?</p>
+<ul>
+<li>
+<p>Better performance (uses hardware directly).</p>
+</li>
+<li>
+<p>Access to full system resources (RAM, GPU, disk).b</p>
+</li>
+</ul>
+
+</body>
+</html>
