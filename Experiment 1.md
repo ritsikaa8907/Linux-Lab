@@ -85,7 +85,7 @@ It typically outputs:
 ### Sample Output:
 ![alt text](<Screenshot- lsb_release -a.png>)
 
-## 2️⃣ $ uname -a
+## 2️⃣  uname -a
 The command uname -a prints detailed system information about the Linux kernel and machine.
 
 uname = Unix Name
