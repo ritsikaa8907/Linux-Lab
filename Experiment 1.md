@@ -13,8 +13,7 @@ Chosen method Option A: Virtual Machine
 5. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
 
-   ![alt text](image-4.png)
-
+![alt text](image-8.png)
 ---
 
 # 2️⃣ Install VirtualBox (ARM64)
