@@ -1,4 +1,18 @@
 # Mac Setup Guide: VS Code, VirtualBox & Ubuntu
+
+## 📑 Table of Contents
+1. [Installation Method](#1-installation-method)
+2. [Installation Process](#2-installation-process)
+   - [VS Code](#1️⃣-install-vs-code)
+   - [VirtualBox](#2️⃣-install-virtualbox-arm64)
+   - [Ubuntu](#3️⃣-download-ubuntu-arm64)
+   - [VM Setup](#4️⃣-create-ubuntu-vm-in-virtualbox)
+3. [Terminal Outputs](#3-terminal-outputs)
+4. [Reflection](#4-reflection)
+5. [Extra Questions](#5-extra-questions)
+
+
+
 ## 1. Installation Method
 Chosen method Option A: Virtual Machine
 
