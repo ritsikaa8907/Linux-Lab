@@ -13,12 +13,12 @@
 
 
 
-## 1. Installation Method
+# 1. Installation Method
 Chosen method Option A: Virtual Machine
 
-## 2. Installation Process
+# 2. Installation Process
 
-# 1️⃣ Install VS Code
+## 1️⃣ Install VS Code
 1. Open your browser and go to:  
    [https://code.visualstudio.com/](https://code.visualstudio.com/)  
 2. Download for **Mac (Apple Silicon)** version.  
@@ -30,7 +30,7 @@ Chosen method Option A: Virtual Machine
 ![alt text](image-8.png)
 ---
 
-# 2️⃣ Install VirtualBox (ARM64)
+## 2️⃣ Install VirtualBox (ARM64)
 1. Go to:  
    [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)  
 2. Download **OS X hosts (ARM64)** version.  
@@ -40,7 +40,7 @@ Chosen method Option A: Virtual Machine
 
 ---
 
-# 3️⃣ Download Ubuntu (ARM64)
+## 3️⃣ Download Ubuntu (ARM64)
 1. Go to:  
    [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)  
 2. Scroll to **Other versions → ARM**.  
@@ -50,7 +50,7 @@ Chosen method Option A: Virtual Machine
 
 ---
 
-# 4️⃣ Create Ubuntu VM in VirtualBox
+## 4️⃣ Create Ubuntu VM in VirtualBox
 1. Open **VirtualBox** → Click **New**.  
    - **Name**: Ubuntu  
    - **Type**: Linux  
@@ -65,7 +65,7 @@ Chosen method Option A: Virtual Machine
 
 ---
 
-## 3. Terminal Outputs
+# 3. Terminal Outputs
 
 ## 1️⃣ lsb_release -a
 The command lsb_release -a displays information about the Linux distribution you are running.
