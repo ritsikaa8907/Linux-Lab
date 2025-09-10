@@ -65,7 +65,7 @@ Chosen method Option A: Virtual Machine
 
 # 3. Terminal Outputs
 
-## 1️⃣ lsb_release -a
+## 1️⃣  lsb_release -a
 The command lsb_release -a displays information about the Linux distribution you are running.
 
 lsb_release = Linux Standard Base release.
