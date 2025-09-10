@@ -166,7 +166,8 @@ It typically shows:
 
 
 ### Sample Output:
-![alt text](<Screenshot- free -m-1.png>)
+![alt text](<Screenshot- free -m-2.png>)
+
 
 ## 4. Reflection
 
