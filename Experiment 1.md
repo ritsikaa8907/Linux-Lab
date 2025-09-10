@@ -13,6 +13,8 @@ Chosen method Option A: Virtual Machine
 5. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
 
+   ![alt text](image-4.png)
+
 ---
 
 # 2️⃣ Install VirtualBox (ARM64)
@@ -31,6 +33,7 @@ Chosen method Option A: Virtual Machine
 2. Scroll to **Other versions → ARM**.  
 3. Download **Ubuntu 22.04 LTS ARM64**.  
 4. File will be a `.iso`.
+![alt text](image-5.png)
 
 ---
 
@@ -46,7 +49,7 @@ Chosen method Option A: Virtual Machine
 3. Attach ISO:  
    - Go to **Settings → Storage → Empty disk → Choose Ubuntu `.iso`**.  
 4. Start VM and follow Ubuntu installation instructions.
-![alt text](image.png)
+
 ---
 
 ## 3. Terminal Outputs
@@ -98,8 +101,7 @@ It typically outputs:
 
 ## Sample Output:
 
-![alt text](image-2.png)
-
+![alt text](image-6.png)
 
 ## 3️⃣  df -h
 The command df -h displays the disk space usage of all mounted file systems.
@@ -123,8 +125,7 @@ It typically shows:
 - Mount point (where the filesystem is attached, e.g., / or /home)
 
 ### Sample Output:
-![alt text](image-3.png)
-
+![alt text](image-7.png)
 
 ## 4️⃣ free -m
 The command free -m displays the system’s memory (RAM and swap) usage in megabytes.
