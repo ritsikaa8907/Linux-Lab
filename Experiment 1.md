@@ -26,9 +26,8 @@ Chosen method Option A: Virtual Machine
 4. Open from **Launchpad** or `Applications`.  
 5. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
+   ![alt text](<Screenshot- VS Code.png>)
 
-![alt text](image-8.png)
----
 
 ## 2️⃣ Install VirtualBox (ARM64)
 1. Go to:  
@@ -37,7 +36,7 @@ Chosen method Option A: Virtual Machine
 3. Open `.dmg` → Drag **VirtualBox.app** to `Applications`.  
 4. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
-
+![alt text](<Screenshot- Virtualbox install.png>)
 ---
 
 ## 3️⃣ Download Ubuntu (ARM64)
@@ -46,8 +45,7 @@ Chosen method Option A: Virtual Machine
 2. Scroll to **Other versions → ARM**.  
 3. Download **Ubuntu 22.04 LTS ARM64**.  
 4. File will be a `.iso`.
-![alt text](image-5.png)
-
+![alt text](<Screenshot- Ubuntu Download.png>)
 ---
 
 ## 4️⃣ Create Ubuntu VM in VirtualBox
@@ -85,7 +83,7 @@ It typically outputs:
 - Codename (e.g., jammy, focal)
 
 ### Sample Output:
-
+![alt text](<Screenshot- lsb_release -a.png>)
 
 ## 2️⃣ $ uname -a
 The command uname -a prints detailed system information about the Linux kernel and machine.
@@ -114,7 +112,8 @@ It typically outputs:
 
 ## Sample Output:
 
-![alt text](image-6.png)
+![alt text](<Screenshot- uname -a.png>)
+---
 
 ## 3️⃣  df -h
 The command df -h displays the disk space usage of all mounted file systems.
@@ -138,7 +137,9 @@ It typically shows:
 - Mount point (where the filesystem is attached, e.g., / or /home)
 
 ### Sample Output:
-![alt text](image-7.png)
+![alt text](<Screenshot- df -h.png>)
+---
+
 
 ## 4️⃣ free -m
 The command free -m displays the system’s memory (RAM and swap) usage in megabytes.
@@ -163,9 +164,9 @@ It typically shows:
 
 - *swap*: usage of swap space (virtual memory)
 
+
 ### Sample Output:
-![alt text](images/image-39.png)
----
+![alt text](<Screenshot- free -m-1.png>)
 
 ## 4. Reflection
 
