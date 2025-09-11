@@ -20,6 +20,12 @@ How it works:
 The for loop adds a README.md in each folder with a placeholder title.
 Finally, it prints Starter Kit Ready!.
 LAB_extra.md
+
+## Sample Output
+![alt text](<Screenshot- Starter_kit.png>)
+![alt text](<Screenshot- steamlit.png>)
+
+
 # LAB_extra
 
 ## Purpose of Script
