@@ -36,6 +36,9 @@ Chosen method Option A: Virtual Machine
 4. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
 
+![alt text](virtualbox_resized.png)
+
+
 ## 3️⃣ Download Ubuntu (ARM64)
 1. Go to:  
    [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)  
