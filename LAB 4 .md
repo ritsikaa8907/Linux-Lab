@@ -1,6 +1,8 @@
 # Objective: Automate file management.
 
-backup.sh script
+## backup.sh script
+
+
 ```bash
 #!/bin/bash
 
@@ -22,8 +24,8 @@ for file in *.txt; do
 done
 ```
 
-🔹 LAB4.md Documentation
-# LAB4 – Backup Script
+
+# LAB 4 – Backup Script
 
 ## 🎯 Script Name
 `backup.sh`

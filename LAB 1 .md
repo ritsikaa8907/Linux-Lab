@@ -1,6 +1,7 @@
 # Objective: Practice essential Linux commands.
 ## Linux Basic Commands
 
+
 # LAB 3
 ##  1. **Navigation Commands**
 
@@ -298,15 +299,16 @@ chown root:admin sample.sh # change ownership to root:admin
 ```
 
 ## 5. Quick Reference Table
-Number	Permission	Meaning
-0	---	No access
-1	--x	Execute only
-2	-w-	Write only
-3	-wx	Write + Exec
-4	r--	Read only
-5	r-x	Read + Exec
-6	rw-	Read + Write
-7	rwx	Full access
+| Number | Permission | Meaning           |
+|--------|-----------|-----------------|
+| 0      | ---       | No access       |
+| 1      | --x       | Execute only    |
+| 2      | -w-       | Write only      |
+| 3      | -wx       | Write + Exec    |
+| 4      | r--       | Read only       |
+| 5      | r-x       | Read + Exec     |
+| 6      | rw-       | Read + Write    |
+| 7      | rwx       | Full access     |
 
 
 ✅ Tip: Use numbers (e.g., 755, 644) when you know the exact permission combo, and symbolic form (u+x, g-w) when you want fine control
@@ -317,12 +319,12 @@ Number	Permission	Meaning
 
 ## What is the difference between chmod and chown?
 
-chmod → change file permissions
-~Controls who can read, write, or execute a file.
-→ Gives owner full rights (read/write/execute), others can read & execute only.
-chown → change file owner
-~Changes who owns a file or directory (the user and group).
-→ Makes user1 the owner of file.txt.
+- chmod → change file permissions
+- Controls who can read, write, or execute a file.
+- Gives owner full rights (read/write/execute), others can read & execute only.
+- chown → change file owner
+- Changes who owns a file or directory (the user and group).
+- Makes user1 the owner of file.txt.
 
 ## How do you check current directory and user?
 Check current directory → use pwd
