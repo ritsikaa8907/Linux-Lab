@@ -18,7 +18,7 @@ Chosen method Option A: Virtual Machine
 
 # 2. Installation Process
 
-## 1️⃣ Install VS Code
+## 1. Install VS Code
 1. Open your browser and go to:  
    [https://code.visualstudio.com/](https://code.visualstudio.com/)  
 2. Download for **Mac (Apple Silicon)** version.  
@@ -28,7 +28,7 @@ Chosen method Option A: Virtual Machine
    **System Settings → Privacy & Security → Allow App**.
 ![alt text](vscode_resized.png)
 
-## 2️⃣ Install VirtualBox (ARM64)
+## 2. Install VirtualBox (ARM64)
 1. Go to:  
    [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)  
 2. Download **OS X hosts (ARM64)** version.  
@@ -39,7 +39,7 @@ Chosen method Option A: Virtual Machine
 ![alt text](virtualbox_resized.png)
 
 
-## 3️⃣ Download Ubuntu (ARM64)
+## 3. Download Ubuntu (ARM64)
 1. Go to:  
    [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)  
 2. Scroll to **Other versions → ARM**.  
@@ -50,7 +50,7 @@ Chosen method Option A: Virtual Machine
 ![alt text](image-12.png)
 
 
-## 4️⃣ Create Ubuntu VM in VirtualBox
+## 4. Create Ubuntu VM in VirtualBox
 1. Open **VirtualBox** → Click **New**.  
    - **Name**: Ubuntu  
    - **Type**: Linux  
@@ -67,7 +67,7 @@ Chosen method Option A: Virtual Machine
 
 # 3. Terminal Outputs
 
-## 1️⃣  lsb_release -a
+## 1.  lsb_release -a
 The command lsb_release -a displays information about the Linux distribution you are running.
 
 lsb_release = Linux Standard Base release.
@@ -87,7 +87,7 @@ It typically outputs:
 ### Sample Output:
 ![alt text](<Screenshot- lsb_release -a.png>)
 
-## 2️⃣  uname -a
+## 2.  uname -a
 The command uname -a prints detailed system information about the Linux kernel and machine.
 
 uname = Unix Name
@@ -117,7 +117,7 @@ It typically outputs:
 ![alt text](<Screenshot- uname -a.png>)
 ---
 
-## 3️⃣  df -h
+## 3.  df -h
 The command df -h displays the disk space usage of all mounted file systems.
 
 df = disk free
@@ -143,7 +143,7 @@ It typically shows:
 ---
 
 
-## 4️⃣ free -m
+## 4. free -m
 The command free -m displays the system’s memory (RAM and swap) usage in megabytes.
 
 free = shows memory usage summary.
