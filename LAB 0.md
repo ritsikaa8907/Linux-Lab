@@ -26,8 +26,7 @@ Chosen method Option A: Virtual Machine
 4. Open from **Launchpad** or `Applications`.  
 5. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
-   ![alt text](<Screenshot- VS Code.png>)
-
+![alt text](vscode_resized.png)
 
 ## 2️⃣ Install VirtualBox (ARM64)
 1. Go to:  
@@ -36,8 +35,6 @@ Chosen method Option A: Virtual Machine
 3. Open `.dmg` → Drag **VirtualBox.app** to `Applications`.  
 4. If blocked, allow in:  
    **System Settings → Privacy & Security → Allow App**.
-![alt text](<Screenshot- Virtualbox install.png>)
----
 
 ## 3️⃣ Download Ubuntu (ARM64)
 1. Go to:  
@@ -45,8 +42,10 @@ Chosen method Option A: Virtual Machine
 2. Scroll to **Other versions → ARM**.  
 3. Download **Ubuntu 22.04 LTS ARM64**.  
 4. File will be a `.iso`.
-![alt text](<Screenshot- Ubuntu Download.png>)
----
+
+
+![alt text](image-12.png)
+
 
 ## 4️⃣ Create Ubuntu VM in VirtualBox
 1. Open **VirtualBox** → Click **New**.  
