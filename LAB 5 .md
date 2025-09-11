@@ -35,13 +35,13 @@ $ bash starter_kit.sh
 Starter Kit Ready!
 **Folder structure after running:**
 project/
-├── README.md
-├── scripts/
-│ └── README.md
-├── docs/
-│ └── README.md
-└── data/
-└── README.md
+- ├── README.md
+- ├── scripts/
+- │ └── README.md
+- ├── docs/
+- │ └── README.md
+- └── data/
+- └── README.md
 
 # Extra Questions
 1. What does mkdir -p do?

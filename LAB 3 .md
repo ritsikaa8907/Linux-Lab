@@ -110,13 +110,10 @@ Error: Start must be less than or equal to end.
 # Extra Questions:
 
 Difference between $1, $@, and $# in bash?
--$1 → The first argument
-Example: In the above, $1 = arg1
--$@ → All arguments, as separate words
-Example: $@ = arg1 arg2 arg3
-(Preserves separation if quoted → "$@" = "arg1" "arg2" "arg3")
--$# → The number of arguments passed
-Example: $# = 3 (since 3 arguments were passed)
+- $1 → The first argument
+- $@ → All arguments, as separate words
+- $# → The number of arguments passed
+
 What does exit 1 mean in a script?
--exit in bash ends the script immediately.
--The number after it (0, 1, 2, etc.) is the exit status code.
+- exit in bash ends the script immediately.
+- The number after it (0, 1, 2, etc.) is the exit status code.

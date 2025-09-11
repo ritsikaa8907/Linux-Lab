@@ -72,25 +72,25 @@ list_20250910_231530.txt
 
 # Extra Questions
 What is the difference between cp, mv, and rsync?
-1. cp (copy)
+- 1. cp (copy)
 Copies files or directories from one place to another.
 Original file remains; a duplicate is created.
-2. mv (move/rename)
-Moves files/directories (like cut-paste).
-Removes them from the original location.
-Also used for renaming.
-3. rsync (remote sync / robust sync)
-A powerful tool for copying/synchronizing files.
-Works locally and over a network/SSH.
-Faster than cp because it only copies changes (not the entire file every time).
-Supports progress display, compression, mirroring directories, etc.
+- 2. mv (move/rename)
+- Moves files/directories (like cut-paste).
+- Removes them from the original location.
+- Also used for renaming.
+- 3. rsync (remote sync / robust sync)
+- A powerful tool for copying/synchronizing files.
+- Works locally and over a network/SSH.
+- Faster than cp because it only copies changes (not the entire file every time).
+- Supports progress display, compression, mirroring directories, etc.
 
 How can you schedule scripts to run automatically?
-1. Using cron (Linux scheduler)
+- 1. Using cron (Linux scheduler)
 cron runs tasks at fixed times/dates.
-2. Using at (one-time scheduling)
+- 2. Using at (one-time scheduling)
 Runs a command/script once at a given time.
-3. Using systemd timers (modern Linux)
+- 3. Using systemd timers (modern Linux)
 Alternative to cron.
 More powerful for recurring jobs.
 Uses .service and .timer files.

@@ -313,10 +313,6 @@ Number	Permission	Meaning
 
 
 
-[alt text](<Screenshot 2025-08-19 at 1.10.12 PM.png>)
-![alt text](<Screenshot 2025-08-19 at 1.10.17 PM.png>)
-
-
 # Extra Questions:
 
 ## What is the difference between chmod and chown?
