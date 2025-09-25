@@ -16,7 +16,7 @@ ps aux
 
     USER       PID  %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
     root         1  0.0  0.1 167500  1100 ?        Ss   Sep25   0:05 /sbin/init
-    vibhu     1234  1.2  1.5 274532 15632 ?        Sl   10:15   0:12 /usr/bin/python3 script.py
+    ritsikaraghuvanshi     1234  1.2  1.5 274532 15632 ?        Sl   10:15   0:12 /usr/bin/python3 script.py
     mysql     2001  0.5  2.0 450000 20988 ?        Ssl  Sep25   1:02 /usr/sbin/mysqld
 
 ------------------------------------------------------------------------
@@ -53,7 +53,7 @@ top
     %Cpu(s): 12.3 us,  5.4 sy,  0.0 ni, 80.1 id,  2.2 wa,  0.0 hi,  0.0 si,  0.0 st
     KiB Mem :  8045632 total,  3564980 free,  1876324 used,  2604328 buff/cache
     PID   USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
-    1234  vibhu     20   0  274532  15632   7892 R   45.0  1.5   0:12.34 python3
+    1234  ritsikaraghuvanshi     20   0  274532  15632   7892 R   45.0  1.5   0:12.34 python3
     2001  mysql     20   0  450000  20988   7564 S   25.0  2.0   1:02.11 mysqld
 
 → Press `q` to quit.
