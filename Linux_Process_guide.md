@@ -35,7 +35,7 @@ pstree -p
                ├─mysqld(2001)
                └─python3(1234)
 
-👉 Shows parent-child process relationships.
+→ Shows parent-child process relationships.
 
 ------------------------------------------------------------------------
 
@@ -56,7 +56,7 @@ top
     1234  vibhu     20   0  274532  15632   7892 R   45.0  1.5   0:12.34 python3
     2001  mysql     20   0  450000  20988   7564 S   25.0  2.0   1:02.11 mysqld
 
-👉 Press `q` to quit.
+→ Press `q` to quit.
 
 ------------------------------------------------------------------------
 
@@ -71,7 +71,7 @@ nice -n 10 sleep 300 &
 
     [1] 3050
 
-👉 PID = 3050 is running in background with nice value 10.
+→ PID = 3050 is running in background with nice value 10.
 
 Change priority of running process:
 
@@ -83,7 +83,7 @@ renice -n -5 -p 3050
 
     3050 (process ID) old priority 10, new priority -5
 
-👉 Now process runs with higher priority.
+→ Now process runs with higher priority.
 
 ------------------------------------------------------------------------
 
@@ -97,7 +97,7 @@ taskset -cp 3050
 
     pid 3050's current affinity list: 0-3
 
-👉 Shows process is allowed on cores 0,1,2,3.
+→ Shows process is allowed on cores 0,1,2,3.
 
 Restrict to core 1 only:
 
@@ -121,7 +121,7 @@ ionice -c 3 -p 3050
 
     successfully set pid 3050's IO scheduling class to idle
 
-👉 Class 3 (idle) → Process only gets I/O when system is idle.
+→ Class 3 (idle) → Process only gets I/O when system is idle.
 
 ------------------------------------------------------------------------
 
@@ -152,7 +152,7 @@ strace -p 3050
     restart_syscall(<... resuming interrupted nanosleep ...>) = 0
     nanosleep({tv_sec=300, tv_nsec=0}, 0x7ffd4a60d8b0) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
 
-👉 Great for debugging.
+→ Great for debugging.
 
 ------------------------------------------------------------------------
 
@@ -166,7 +166,7 @@ sudo fuser -n tcp 8080
 
     8080/tcp:           4321
 
-👉 PID 4321 is using port 8080.
+→ PID 4321 is using port 8080.
 
 ------------------------------------------------------------------------
 
@@ -184,7 +184,7 @@ pidstat -p 3050 2 3
     12:30:24     1000      3050    0.00    0.00   0.00     1  sleep
     12:30:26     1000      3050    0.00    0.00   0.00     1  sleep
 
-👉 Shows CPU usage every 2 seconds, 3 times.
+→ Shows CPU usage every 2 seconds, 3 times.
 
 ------------------------------------------------------------------------
 
