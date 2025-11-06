@@ -1,0 +1,5 @@
+```
+echo "enter your name:"
+readname
+echo "Hello $name"
+```

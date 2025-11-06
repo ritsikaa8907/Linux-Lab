@@ -17,14 +17,7 @@ ps aux
 - `x` → Show processes **not attached to a terminal**
 
 **📊 Example Output:**
-```
-USER       PID  %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.1 167500  1100 ?        Ss   Nov01   0:05 /sbin/init
-ritsikaraghuvanshi     1234  1.2  1.5 274532 15632 ?        Sl   10:15   0:12 /usr/bin/python3 script.py
-mysql     2001  0.5  2.0 450000 20988 ?        Ssl  Nov01   1:02 /usr/sbin/mysqld
-```
-
----
+![alt text](image-23.png)---
 
 ## 🌲 2. Process Tree
 
@@ -34,12 +27,7 @@ pstree -p
 ```
 
 **📊 Example Output:**
-```
-systemd(1)─┬─NetworkManager(778)
-           ├─sshd(895)─┬─sshd(1023)───bash(1024)───pstree(1101)
-           ├─mysqld(2001)
-           └─python3(1234)
-```
+![alt text](image-22.png)
 
 > 🪴 **Description:** Displays parent-child relationships between processes in a tree format.
 
@@ -53,14 +41,7 @@ top
 ```
 
 **📊 Example Output:**
-```
-top - 10:20:51 up 2 days,  3:12,  2 users,  load average: 0.22, 0.33, 0.45
-Tasks: 197 total,   1 running, 196 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 12.3 us,  5.4 sy,  0.0 ni, 80.1 id,  2.2 wa,  0.0 hi,  0.0 si,  0.0 st
-PID   USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
-1234  ritsikaraghuvanshi     20   0  274532  15632   7892 R   45.0  1.5   0:12.34 python3
-2001  mysql     20   0  450000  20988   7564 S   25.0  2.0   1:02.11 mysqld
-```
+![alt text](image-24.png)
 
 > 🧭 Press **`q`** to quit the `top` interface.
 
@@ -89,6 +70,8 @@ renice -n -5 -p 3050
 ```
 3050 (process ID) old priority 10, new priority -5
 ```
+![alt text](image-13.png)
+
 > 🚀 Higher priority (negative nice value = more CPU time).
 
 ---
@@ -112,6 +95,7 @@ taskset -cp 1 3050
 ```
 pid 3050's current affinity list: 1
 ```
+![alt text](image-17.png)
 
 > ⚙️ Useful for assigning specific processes to specific CPU cores.
 
@@ -160,11 +144,8 @@ strace -p 3050
 ```
 
 **Example Output:**
-```
-strace: Process 3050 attached
-restart_syscall(<... resuming interrupted nanosleep ...>) = 0
-nanosleep({tv_sec=300, tv_nsec=0}, 0x7ffd4a60d8b0) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
-```
+
+![alt text](<Screenshot 2025-11-04 at 3.49.44 PM.png>)
 
 > 🧩 Great for **debugging** system calls and understanding process behavior.
 
@@ -177,10 +158,12 @@ nanosleep({tv_sec=300, tv_nsec=0}, 0x7ffd4a60d8b0) = ? ERESTART_RESTARTBLOCK (In
 sudo fuser -n tcp 8080
 ```
 
-**Output:**
+**Example Output:**
 ```
 8080/tcp:           4321
 ```
+
+![alt text](image-14.png)
 
 > 🔎 PID **4321** is using port **8080**.
 
@@ -194,13 +177,7 @@ pidstat -p 3050 2 3
 ```
 
 **Example Output:**
-```
-Linux 5.15.0 (ubuntu)   09/25/25        _x86_64_        (4 CPU)
-12:30:20      UID       PID    %usr %system  %CPU   CPU  Command
-12:30:22     1000      3050    0.00    0.00   0.00     1  sleep
-12:30:24     1000      3050    0.00    0.00   0.00     1  sleep
-12:30:26     1000      3050    0.00    0.00   0.00     1  sleep
-```
+![alt text](image-18.png)
 
 > 📈 Monitors CPU usage of a process at fixed intervals.
 
@@ -223,7 +200,7 @@ echo 100M   | sudo tee /sys/fs/cgroup/memory/testgroup/memory.limit_in_bytes
 ```bash
 echo 3050 | sudo tee /sys/fs/cgroup/cpu/testgroup/cgroup.procs
 ```
-
+![alt text](image-19.png)
 > 🧩 Helps allocate specific CPU or memory resources to defined groups of processes.
 
 ---
@@ -253,8 +230,3 @@ echo 3050 | sudo tee /sys/fs/cgroup/cpu/testgroup/cgroup.procs
 | 🪄 Debugging | `strace`, `lsof`, `pidstat` | Analyze process behavior |
 
 ---
-
-> ✨ **Author:** *Ritsika / Linux Lab Series*  
-> 🧩 **Instructor:** *Prof. Vibhu Gautam*  
-> 📅 **Date:** November 2025  
-> 🔗 **Course:** Linux Fundamentals Lab – Process Management
